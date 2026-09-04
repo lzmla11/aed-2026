@@ -4,11 +4,14 @@ using namespace std;
 
 template<class T>
 class singly_linked_list {
+public:
     struct node {
         T data; 
         node* next; 
         node(T d, node* n = nullptr) : data(d), next(n) {} 
     }; 
+
+private: 
     node* head = nullptr; 
     node* tail = nullptr;
     int list_size = 0; 
